@@ -43,4 +43,9 @@
     margin: 0px !important;
     width: 100%;
   }
+  .about-us h3 {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
 }
