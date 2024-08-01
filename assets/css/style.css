@@ -444,7 +444,9 @@ svg {
   position: relative;
   width: 100%;
 }
-
+.cgrey {
+  color: #ccc;
+}
 /* 
 .timeline::after {
 content: "";
