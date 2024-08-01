@@ -1,6 +1,6 @@
-document
-  .querySelector(".scroll-to-top")
-  .addEventListener("click", function (e) {
+const scrollBtn = document.querySelector(".scroll-to-top");
+if (scrollBtn) {
+  scrollBtn.addEventListener("click", function (e) {
     e.preventDefault(); // Prevent default action (for anchor tags)
 
     window.scrollTo({
@@ -8,6 +8,7 @@ document
       behavior: "smooth",
     });
   });
+}
 
 gsap.from("nav", {
   opacity: 0, // Start with opacity 0 (fully transparent)
@@ -127,7 +128,9 @@ tl2.from(".line1,.line2", {
 });
 tl2.from("footer", {
   opacity: 0,
-  delay: 0.5,
+  delay: 0.2,
   duration: 1,
   y: 200,
 });
+
+AOS.init();
