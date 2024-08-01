@@ -344,10 +344,11 @@ svg {
   font-family: "DM Sans", sans-serif;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  font-size: 1.4em !important;
+  font-size: 30px !important;
   letter-spacing: 0px;
   color: #ff69b4 !important;
   border-bottom: 0px solid #e39a2e;
+  font-weight: 700;
 }
 .PCBlueSubheader {
   font-family: "DM Sans", sans-serif;

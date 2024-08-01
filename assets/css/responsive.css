@@ -34,10 +34,10 @@
     object-fit: cover;
     image-rendering: auto;
   }
-  #sresearch {
+  /* #sresearch {
     font-size: 5vw;
     line-height: 40px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -65,5 +65,8 @@
   }
   .research3 {
     width: 290px !important;
+  }
+  #sresearch {
+    display: none;
   }
 }
