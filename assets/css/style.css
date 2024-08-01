@@ -86,7 +86,7 @@ nav.bg-dark {
   font-family: "Inter", sans-serif;
 }
 .hero-section h2 {
-  font-size: 15vw;
+  font-size: 8vw;
   font-weight: 700;
 }
 
@@ -299,4 +299,12 @@ footer ul li a:hover {
   font-weight: 400;
   font-family: sans-serif;
   color: #d1d1d1;
+}
+#typed-words:hover {
+  color: #ff69b4;
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
 }
