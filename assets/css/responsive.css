@@ -10,6 +10,11 @@
     max-width: 1320px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .hero-section .svgs-icons img {
+    width: 70px !important;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .work-main {
     height: 200px;

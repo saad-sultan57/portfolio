@@ -91,7 +91,7 @@ nav.bg-dark {
 }
 
 .hero-section .svgs-icons img {
-  width: 50px;
+  width: 150px;
 }
 
 .work-item {
@@ -307,4 +307,30 @@ footer ul li a:hover {
 
 svg {
   cursor: pointer;
+}
+
+#carousal img {
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+shadow-2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  .object {
+    margin: 30px 15px;
+    img {
+      box-shadow: 15px 15px pink;
+    }
+  }
+  &:nth-child(2) {
+    .object {
+      margin: 30px 15px;
+      img {
+        box-shadow: 15px 15px blue;
+      }
+    }
+  }
 }
