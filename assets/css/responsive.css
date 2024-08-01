@@ -19,6 +19,10 @@
   .work-main {
     height: 200px;
   }
+  #sresearch {
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
 @media only screen and (max-width: 991px) {
   nav {
@@ -33,6 +37,12 @@
     object-position: center center;
     object-fit: cover;
     image-rendering: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #sresearch {
+    padding-left: 50px !important;
   }
 }
 

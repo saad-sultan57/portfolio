@@ -475,24 +475,18 @@ z-index: -1;
 .circle-custom i {
   color: #ff69b4;
 }
+#sresearch {
+  font-size: 71px;
+  line-height: 85px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
 @media (max-width: 1125px) {
   .timeline-item {
     grid-template-columns: 8% 1fr;
   }
 }
 @media (max-width: 850px) {
-  .circle-custom {
-    /* display: none; */
-  }
-  .last-card-item::before {
-    /* display: none; */
-  }
-  .timeline-card:first-of-type::before {
-    /* display: none; */
-  }
-  .timeline-card::before {
-    /* display: none; */
-  }
   .timeline-item {
     grid-template-columns: 8% 1fr;
   }
