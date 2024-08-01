@@ -502,9 +502,6 @@ z-index: -1;
   .timeline-item .main-icon {
     margin: 0 auto;
   }
-  .timeline-card {
-    padding: 1em;
-  }
   .timeline-card::before {
     display: none;
   }
