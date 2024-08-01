@@ -478,8 +478,11 @@ z-index: -1;
 #sresearch {
   font-size: 71px;
   line-height: 85px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: sans-serif;
+}
+#sresearch span {
+  font-weight: 400;
 }
 @media (max-width: 1125px) {
   .timeline-item {
