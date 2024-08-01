@@ -206,6 +206,9 @@ footer ul li a {
 footer ul li a:hover {
   color: #ff69b4;
 }
+#boxes h2 {
+  font-family: "DM Sans", sans-serif;
+}
 
 /* city circle============================ */
 .phone-image {
@@ -309,28 +312,203 @@ svg {
   cursor: pointer;
 }
 
-#carousal img {
-  height: 600px;
+.research-image {
+  max-width: 500px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px #eeee;
+  cursor: pointer;
+}
+.GreenSubheader {
+  font-family: "Open Sans" !important;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 1.4em !important;
+  letter-spacing: 0px;
+  color: #a5b038 !important;
+  font-weight: 500;
+  border-bottom: 0px solid #e39a2e;
+}
+.YellowSubheader {
+  font-family: "Open Sans" !important;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 1.4em !important;
+  letter-spacing: 0px;
+  color: #f1a01f !important;
+  font-weight: 500;
+  border-bottom: 0px solid #e39a2e;
+}
+.OrangeSubheader {
+  font-family: "Open Sans" !important;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 1.4em !important;
+  letter-spacing: 0px;
+  color: #f26723 !important;
+  border-bottom: 0px solid #e39a2e;
+}
+.PCBlueSubheader {
+  font-family: "Open Sans" !important;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 1.4em !important;
+  letter-spacing: 0px;
+  color: #1395d3 !important;
+  font-weight: 700 !important;
+  border-bottom: 0px solid #e39a2e !important;
+}
+.card-item-yellow {
+  color: #f1a01f;
+  position: relative;
+  width: 100%;
 }
 
-shadow-2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: white;
-  .object {
-    margin: 30px 15px;
-    img {
-      box-shadow: 15px 15px pink;
-    }
+.timeline-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #436285 !important;
+  position: relative;
+}
+.timeline-card-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #436285 !important;
+  position: relative;
+}
+
+.timeline:before {
+}
+.timeline-card::before {
+  content: "";
+  width: 0.18rem;
+  height: 100%;
+  background: #dfdfdf;
+  position: absolute;
+  left: 8.3px;
+  z-index: -1;
+}
+.timeline-card:first-of-type::before {
+  content: "";
+  width: 0.18rem;
+  height: 100%;
+  background: #dfdfdf;
+  position: absolute;
+  left: 8.3px;
+  top: 0%;
+  z-index: -1;
+}
+.last-card-item::before {
+  content: "";
+  width: 0.18rem;
+  height: 0%;
+  background: #dfdfdf;
+  position: absolute;
+  left: 8.3px;
+  bottom: 50%;
+  z-index: -1;
+}
+.circle-custom {
+  font-size: 0.5rem !important;
+}
+.timeline-item {
+  display: grid;
+  align-items: center;
+  gap: 0.5em;
+  align-content: center;
+  justify-items: start;
+  justify-content: space-between;
+  grid-template-columns: 5% 1fr;
+}
+.main-icon {
+  margin-right: 0.1em;
+  font-size: 2.45rem !important;
+}
+.card-item-orange {
+  color: #f26723;
+  position: relative;
+  width: 100%;
+}
+
+.card-item-pcblue {
+  color: #1395d3;
+  position: relative;
+  width: 100%;
+}
+
+.card-item-green {
+  color: #a5b038;
+  position: relative;
+  width: 100%;
+}
+
+/* 
+.timeline::after {
+content: "";
+position: absolute;
+height: 500px;
+width: 3px;
+background-color: #d5d5d5;
+top: 6.1%;
+z-index: -1;
+} */
+.subcard {
+  position: relative;
+  padding: 1.5em;
+  background: #fdfdfd;
+  color: black;
+  width: -webkit-fill-available;
+  min-height: 3.3rem;
+}
+
+.timeline {
+  display: block !important;
+}
+
+.subcard {
+  position: static !important;
+  display: block;
+}
+@media (max-width: 1125px) {
+  .timeline-item {
+    grid-template-columns: 8% 1fr;
   }
-  &:nth-child(2) {
-    .object {
-      margin: 30px 15px;
-      img {
-        box-shadow: 15px 15px blue;
-      }
-    }
+}
+@media (max-width: 850px) {
+  .circle-custom {
+    /* display: none; */
+  }
+  .last-card-item::before {
+    /* display: none; */
+  }
+  .timeline-card:first-of-type::before {
+    /* display: none; */
+  }
+  .timeline-card::before {
+    /* display: none; */
+  }
+  .timeline-item {
+    grid-template-columns: 8% 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+  .timeline-item .main-icon {
+    margin: 0 auto;
+  }
+  .timeline-card {
+    padding: 1em;
+  }
+  .timeline-card::before {
+    display: none;
+  }
+  .fa.fas.fa-circle.fa-stack-2x {
+    display: none;
   }
 }
