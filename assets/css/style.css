@@ -502,10 +502,14 @@ z-index: -1;
   .timeline-item .main-icon {
     margin: 0 auto;
   }
+
   .timeline-card::before {
     display: none;
   }
   .fa.fas.fa-circle.fa-stack-2x {
     display: none;
+  }
+  .timeline-item img {
+    width: 100% !important;
   }
 }
