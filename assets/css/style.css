@@ -462,6 +462,7 @@ z-index: -1;
   color: rgb(253, 253, 253);
   width: -webkit-fill-available;
   min-height: 3.3rem;
+  font-family: "DM Sans", sans-serif;
 }
 
 .timeline {
