@@ -467,7 +467,11 @@ z-index: -1;
   min-height: 3.3rem;
   font-family: "DM Sans", sans-serif;
 }
-
+.subcard p {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
 .timeline {
   display: block !important;
 }
